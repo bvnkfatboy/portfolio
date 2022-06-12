@@ -1,0 +1,47 @@
+
+
+.navbar{
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.navbar-bg {
+    background-color: whitesmoke;
+    transition: 0.3s;
+}
+.navbar-bg a {
+    color: black  !important;
+}
+
+
+
+/* .bg-night{
+    background-color: rgb(50, 50, 50);
+} */
+/* body {
+    background: rgb(30, 30, 30);
+} */
+/* .bg-night .navbar-toggler {
+}
+
+.bg-night a {
+    
+} */
+
+
+.darkmode-background {
+    background: rgb(30, 30, 30) !important;
+}
+
+.darkmode--activated .navbar-bg {
+    background-color: rgb(50, 50, 50);
+    transition: 0.3s;
+}
+.darkmode--activated .navbar-bg a {
+    color: white !important;
+}
+
+.darkmode--activated .navbar-bg .navbar-toggler{
+    background-color: whitesmoke;
+
+}
+
