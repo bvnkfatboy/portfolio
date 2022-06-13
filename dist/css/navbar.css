@@ -32,3 +32,16 @@
 
 }
 
+.darkmode--activated .banner {
+    /* background-color: whitesmoke; */
+     background-color: rgb(50, 50, 50) !important;
+     transition: 0.3s;
+}
+
+.banner {
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+    background-color: rgb(10, 10, 10) !important;
+    transition: 0.3s;
+}
