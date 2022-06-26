@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="dist/css/navbar.css">
     <title>myPortfolio - Theerapong</title>
 </head>
-<body>
+<body >
 
 
 
@@ -39,7 +39,7 @@
 
 
           <div class="banner">
-
+            <canvas id="canvas" width="400px" height="400px"></canvas>
           </div>
 
           <div class="infomation">
@@ -51,25 +51,47 @@
           </div>
     </div>
 
-<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
-<script>
 
-
-const options = {
-  saveInCookies: true, // default: true,
-  label: '🌓', // default: ''
-  autoMatchOsTheme: true // default: true
-
-}
-
-const darkmode = new Darkmode(options);
-darkmode.showWidget();
-
-
-  function addDarkmodeWidget() {
-    new Darkmode().showWidget();
+<script type="importmap">
+  {
+    "imports": {
+      "three": "https://unpkg.com/three@0.141.0/build/three.module.js",
+      "GLTFLoader" : "https://unpkg.com/three@0.141.0/examples/jsm/loaders/GLTFLoader.js"
+    }
   }
-  window.addEventListener('load', addDarkmodeWidget);
+</script>
+
+<script type="module">
+  import {GLTFLoader} from 'GLTFLoader';
+  import * as THREE from 'three';
+
+  let scene = new THREE.Scene();
+  let renderer = new THREE.WebGLRenderer({
+    canvas : document.querySelector('#canvas'),
+    alpha: true, 
+    antialias :true
+  });
+
+  renderer.outputEncoding = THREE.sRGBEncoding;
+
+  let camera = new THREE.PerspectiveCamera(45,1);
+  camera.position.set(0,-0.35,4);
+  // scene.background = new THREE.Color('Transparent');
+  let light = new THREE.DirectionalLight(0xffff00,10);
+  // renderer.setClearColor( 0x000000, 0 );
+  scene.add(light);
+  let loader = new GLTFLoader();
+  loader.load('shiba/scene.gltf', function(gltf){
+    scene.add(gltf.scene);
+    function animate(){
+      requestAnimationFrame(animate)
+      gltf.scene.rotation.y += 0.011
+      renderer.render(scene,camera);
+    }
+    animate();
+    // renderer.render(scene,camera);
+  });
+
 </script>
 
 
