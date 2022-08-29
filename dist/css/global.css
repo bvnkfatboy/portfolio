@@ -1,7 +1,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Kanit&family=Noto+Sans+Thai&display=swap');
+@font-face {
+  font-family: Catalish_Huntera;
+  src: url(../font/Catalish_Huntera.ttf);
+}
 
 
+.myLogo{
+  font-family: 'Catalish_Huntera';
+}
 body {
   font-family: 'Kanit', sans-serif;
   background-color: #202023;
