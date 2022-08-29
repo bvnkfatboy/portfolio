@@ -10,8 +10,10 @@
     <link rel="stylesheet" href="dist/css/global.css">
     <link rel="stylesheet" href="dist/css/reset.css">
     <link rel="stylesheet" href="dist/darkmode/dark-mode.css">
+    
 
     <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   </head>
   <body data-theme="dark">
@@ -35,16 +37,19 @@
           <div class="profile darkmode-ignore w-100">
 
             <div class="img-bg">
+             
                 <div class="bg-image" 
-                  style="
-                    background-image: url('dist/img/bg.jpg');
-                    height: 300px;
-                    border-radius: 10px;
-                  ">
-                </div>
+                style="
+                  background-image: url('dist/img/bg.jpg');
+                  height: 300px;
+                  border-radius: 10px;
+                ">
+              </div>
+
             </div>
             <div class="img-profile">
-                <img src="dist/img/profile.jpg" alt="">
+                 
+                      <img src="dist/img/profile.jpg" alt="">
 
                 <div class="img-name darkmode-ignore">
                   <h4 class="">Theerapong Tha-in</h4>
@@ -56,27 +61,30 @@
             <div class="profile-edu">
               <h4>Education</h4>
               <p>( การศึกษา )</p>
-              <ul class="timeline mb-4">
-                <li>
-                  <p class="float-right pb-1"><b>มัธยมตอนต้น</b></p>
-                  <p>โรงเรียนมุกดาวิทยานุกุล</p>
-                </li>
-                <li>
-                  <p class="float-right pb-1"><b>ประกาศนียบัตรวิชาชีพ (ปวช.)</b></p>
-                  <p>วิทยาลัยการอาชีพนวมินทราชินีมุกดาหาร</p>
-                  <p>สาขาคอมพิวเตอร์ธุรกิจ</p>
-                </li>
-                <li>
-                  <p class="float-right pb-1"><b>ประกาศนียบัตรวิชาชีพชั้นสูง (ปวส.)</b></p>
-                  <p>วิทยาลัยการอาชีพนวมินทราชินีมุกดาหาร</p>
-                  <p>สาขาคอมพิวเตอร์โปรแกรมเมอร์</p>
-                </li>
-                <li>
-                  <p class="float-right pb-1"><b>ปริญญาตรี</b></p>
-                  <p>มหาวิทยาลัยอุบลราชธานี</p>
-                  <p>คณะวิทยาศาสตร์ สาขาเทคโนโลยีสารสนเทศ </p>
-                </li>
-              </ul>
+              <div data-aos="fade-left" data-aos-duration="1000">
+                <ul class="timeline mb-4">
+                  <li>
+                    <p class="float-right pb-1"><b>มัธยมตอนต้น</b></p>
+                    <p>โรงเรียนมุกดาวิทยานุกุล</p>
+                  </li>
+                  <li>
+                    <p class="float-right pb-1"><b>ประกาศนียบัตรวิชาชีพ (ปวช.)</b></p>
+                    <p>วิทยาลัยการอาชีพนวมินทราชินีมุกดาหาร</p>
+                    <p>สาขาคอมพิวเตอร์ธุรกิจ</p>
+                  </li>
+                  <li>
+                    <p class="float-right pb-1"><b>ประกาศนียบัตรวิชาชีพชั้นสูง (ปวส.)</b></p>
+                    <p>วิทยาลัยการอาชีพนวมินทราชินีมุกดาหาร</p>
+                    <p>สาขาคอมพิวเตอร์โปรแกรมเมอร์</p>
+                  </li>
+                  <li>
+                    <p class="float-right pb-1"><b>ปริญญาตรี</b></p>
+                    <p>มหาวิทยาลัยอุบลราชธานี</p>
+                    <p>คณะวิทยาศาสตร์ สาขาเทคโนโลยีสารสนเทศ </p>
+                  </li>
+                </ul>
+              </div>
+
             </div>
             <hr class="line">
 
@@ -84,7 +92,7 @@
               <div class="row">
                 <div class="col-sm">
                   <h4>Hard Skill</h4>
-
+                  <div data-aos="fade-right" data-aos-duration="1000">
                   <ul class="timeline mb-4">
                     <li>
                       <p class="float-right pb-1">HTML</p>
@@ -105,9 +113,11 @@
                       <p class="float-right pb-1">Illustrator</p>
                     </li>
                   </ul>
+                  </div>
                 </div>
                 <div class="col-sm">
                   <h4>Soft Skill</h4>
+                  <div data-aos="fade-left" data-aos-duration="1200">
                   <ul class="timeline mb-4">
                     <li>
                       <p class="float-right pb-1">พร้อมเรียนรู้ในสิ่งใหม่ๆ เสมอ</p>
@@ -116,6 +126,7 @@
                       <p class="float-right pb-1">เข้ากับคนอื่นได้ดี</p>
                     </li>
                   </ul>
+                </div>
                 </div>
               </div>
             </div>
@@ -130,8 +141,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
  
     <script src="dist/darkmode/dark-mode-switch.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script>
+
       const options = {
         bottom: '30px', // default: '32px'
         right: '30px', // default: '32px'
@@ -170,7 +183,14 @@
           document.body.scrollTop = 0; // For Safari
           document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
         }
+
+
+
     </script>
+
+<script>
+  AOS.init();
+</script>
 
 </body>
 </html>
