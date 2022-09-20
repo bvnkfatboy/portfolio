@@ -13,14 +13,20 @@ body {
   font-family: 'Kanit', sans-serif;
   background-color: #202023;
   height: 150vh;
+  /* overflow-x: hidden; */
 }
 
 .darkmode-toggle {
   z-index: 100;
 }
+
 .container{
   max-width: 800px;
+  overflow-x: hidden;
 }
+@media only screen and (max-width: 600px) {    .container {
+  overflow-x: hidden;
+}}
 
 .bg-navcustom  a{
   color: #000 !important;
@@ -95,7 +101,7 @@ nav {
   /* margin-left: 10px; */
 }
 
-.profile .img-profile  h4,
+.profile .img-profile  h1,
 .profile .img-profile  p,
 .profile .profile-edu p ,
 .profile .profile-edu h4 ,
@@ -104,7 +110,7 @@ nav {
   color: #000 !important;
 }
 
-.darkmode--activated .img-profile  h4 ,
+.darkmode--activated .img-profile  h1 ,
 .darkmode--activated .profile .img-profile  p ,
 .darkmode--activated .profile .profile-edu p,
 .darkmode--activated .profile .profile-edu h4 ,
@@ -139,7 +145,7 @@ hr.line {
 .profile-text{
   margin-top: 10px;
   text-indent: 50px;
-  text-align: justify;
+  /* text-align: justify; */
   text-justify: inter-word;
 }
 
@@ -236,4 +242,40 @@ ul.timeline > li:before {
 
 #myBtn:hover {
 background-color: #555; /* Add a dark-grey background on hover */
+}
+
+
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(25, 25, 25, 0.99);
+  z-index: 10;
+  /* cursor: pointer; */
+}
+
+#text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 25px;
+  transform: translate(-50%,-50%);
+  transition: 0.5s;
+
+  -ms-transform: translate(-50%,-50%);
+}
+
+#text ul li{
+  margin: 20px;
+
+}
+#text ul li a {
+  text-decoration: none;
+  color: white;
+
 }
